@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: rgb(169, 248, 248);
+            margin: 150px;
+        }
+        .container{
+            display: grid;
+            height: 50vh;
+            width: 80vw;
+            grid-gap: 20px ;
+            grid-template-columns: repeat(4, auto) ;
+            grid-template-rows:  repeat(4, auto);
+        }
+        @media screen and (max-width: 800px){
+            body{
+                background-color: red;
+                
+            }
+        }
+        @media screen and (max-width: 600px){
+            body{
+                background-color: blue;
+            }
+        }
+        .box {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: lightblue;
+            border-radius: 10px;
+            border-radius: 10px;
+        }
+        .box img {
+            width: 40px; 
+            height: 40px;
+            border: 2px solid rgb(146, 32, 146);
+            border-radius: 100px;
+            margin-right: 11px;
+        }
+        .box1{
+            color: white;
+            background-color: rgb(168, 13, 168);
+            grid-column: 1/3;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgb(20, 9, 9);
+        }
+        .box2{
+            color: white;
+            border-radius: 10px;
+            background-color: grey;
+            box-shadow: 0 4px 8px rgb(20, 9, 9);
+        } 
+        .box3{
+            background-color: white;
+            border-radius: 10px;
+            grid-column: 4/4;
+            grid-row: 1/span 2;
+            box-shadow: 0 4px 8px rgb(20, 9, 9);
+        }
+        .box4{
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(20, 9, 9);
+            
+        }
+         .box5{
+            color: white;
+            background-color: rgb(1, 1, 32);
+            border-radius: 10px;
+            grid-column: 2/ span 2;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(20, 9, 9);
+        }
+        
+        .box .name{
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .box .para1{
+            margin-left: -50px;
+            margin-top: 30px;
+            margin-bottom: 8px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .box .para2{
+            margin-left: -50px;
+            font-size: 14px;
+        }
+        .box .role{
+            color: rgb(185, 185, 185);
+            margin-top: 0px;
+            font-size: 12px;
+            margin-top: -13px;
+        } 
+
+    </style>
+    </head>
+<body>
+    <div class="container">
+
+        <div class="box box1">
+            <img src="image1.jpg" alt="img1">
+            <div class="content">
+            <p class="name">Charles</p>
+            <p class="role">Verified Graduate</p>
+            <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, incidunt molestias doloremque eaque distinctio temporibus dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id officiis nesciunt nisi nemo eos veritatis optio quia modi,</p>
+            <p class="para2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus in, blanditiis alias, laboriosam nihil ea maiores cumque animi quibusdam dolorem totam sequi. Esse nobis natus ea ipsum voluptate, assumenda asperiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptates culpa exercitationem tenetur voluptate, saepe reprehenderit quisquam quas sint sit recusandae debitis ea, quam facere corporis qui vel modi et quo maiores, totam laudantium assumenda expedita? Quia vero perspiciatis maiores.</p>
+            </div>
+        </div>
+        <div class="box box2">
+            <img src="image2.jpg" alt="img2">
+            <div class="content">
+            <p class="name">Mike</p>
+            <p class="role">Verified Graduate</p>
+            <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex esse corrupti deserunt labore delectus natus architecto </p>
+            <p class="para2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, tempora facere? Quas sit, dolore laborum perspiciatis mollitia harum blanditiis corporis eligendi voluptate veritatis commodi temporibus? Hic earum accusamus sit mollitia.</p>
+            </div>
+        </div>
+        <div class="box box3">
+            <img src="image 3.jpg" alt="img3">
+            <div class="content"> 
+            <p class="name">Jessica</p>
+            <p class="role">Verified Graduate</p>
+            <p class="para1"> ipsum dolor sit amet consectetur adipisicing elit. Recusandae placeat suscipit exercitationem minus! Ullam alias nostrum consectetur pariatur voluptatum, ut aperiam et repellat, veniam tempora, id eveniet rerum nobis iure.</p>
+            <p class="para2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, quia nam repudiandae possimus facilis omnis laboriosam harum. Inventore, maiores eum.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore iure at eligendi odio dolores minus recusandae similique iste non repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reiciendis at modi perferendis tempore aut dolor doloremque dicta porro totam quas itaque distinctio nulla cum quod, alias accusamus eos asperiores sequi. Deleniti porro aspernatur nisi eius facere dignissimos reiciendis consequatur veritatis quam! Error, quam at atque totam dolore obcaecati facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe nam fuga, consequatur atque cum possimus incidunt porro eaque minima, ex accusamus libero quia, delectus sunt placeat beatae impedit ducimus. Aliquid deserunt accusantium necessitatibus dicta odit sint, eos aspernatur veniam ullam doloremque assumenda harum ut, quo culpa optio magni quia sed?
+            </p>
+        </div>
+        </div>
+        <div class="box box4">
+            <img src="image4.jpg" alt="img4">
+            <div class="content"> 
+            <p class="name">Millie</p>
+            <p class="role">Verified Graduate</p>
+            <p class="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam necessitatibus voluptas obcaecati. </p>
+            <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate illum natus numquam nam recusandae maiores iure quo nulla aspernatur!</p>
+            </div>
+        </div>
+        <div class="box box5">
+            <img src="image5.jpg" alt="img5">
+            <div class="content"> 
+            <p class="name">Robert</p>
+            <p class="role">Verified Graduate</p>
+            <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis beatae eius iusto repudiandae quidem inventore</p>
+            <p class="para2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam fugit ipsum quas aut officiis sequi, sunt labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tempora quos neque perferendis consequuntur veniam rerum eligendi doloremque porro iure!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
